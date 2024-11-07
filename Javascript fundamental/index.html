@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Food Recommendations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Delicious Food Recommendations</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button id="mode-toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+    </header>
+    <!-- Slider Section Start -->
+    <div class="slider">
+      <div class="slide fade">
+        <img
+          src="https://media.istockphoto.com/id/155358719/id/foto/burger-mini.jpg?s=612x612&w=0&k=20&c=w0bmy_YSuO_2cpOT5oKRDxKIyzifCQ5mR5CHdvR7XNo="
+          alt="burger"
+        />
+      </div>
+      <div class="slide fade">
+        <img
+          src="https://media.istockphoto.com/id/1485718144/id/foto/set-memasak-tangan-koki-hamburger-mini-burger-mini-di-dapur-restoran.jpg?s=612x612&w=0&k=20&c=Lal1XpF4Vi5cvFEq2zuDuzYWWa7D1GI6aG6lp8IvcOs="
+          alt="plating"
+        />
+      </div>
+      <div class="slide fade">
+        <img
+          src="https://media.istockphoto.com/id/938742222/id/foto/cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=OPCB6cvr8E8m6rtFX75WG-s8T3aXBqGbpTQ3U5iD65s="
+          alt="pizza"
+        />
+      </div>
+    </div>
+    <!-- Slider Section End -->
+
+    <main>
+      <div class="food-card" id="spaghetti-card">
+        <img src="assets/spageti.jpg" alt="Spaghetti Carbonara" />
+        <h2>Spaghetti Carbonara</h2>
+        <p>A classic Italian pasta dish with creamy sauce and pancetta.</p>
+        <button onclick="showDataTypes('spaghetti')">
+          View Spaghetti Data Types
+        </button>
+      </div>
+
+      <div class="food-card" id="taco-card">
+        <img src="assets/beef tacos.jpg" alt="Beef Tacos" />
+        <h2>Beef Tacos</h2>
+        <p>Mexican tacos filled with spiced beef, lettuce, and cheese.</p>
+        <button onclick="showDataTypes('taco')">View Taco Data Types</button>
+      </div>
+
+      <div class="food-card" id="sushi-card">
+        <img src="assets/sushi roll.jpg" alt="Sushi Roll" />
+        <h2>Sushi Roll</h2>
+        <p>Traditional Japanese sushi with fresh fish and rice.</p>
+        <button onclick="showDataTypes('sushi')">View Sushi Data Types</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>This Website Made By Virginia Angelica</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
